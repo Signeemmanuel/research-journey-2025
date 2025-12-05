@@ -1,0 +1,96 @@
+# ===========================
+# Python & Environment
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ===========================
+# Jupyter & Colab
+# ===========================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ===========================
+# Machine Learning (Crucial!)
+# ===========================
+# Ignore datasets (Too large for Git)
+data/
+datasets/
+raw_data/
+processed_data/
+
+# Ignore Model Weights (Too large, track these in WandB or S3)
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.tflite
+models/
+saved_models/
+checkpoints/
+
+# Ignore Logs and Experiment Outputs
+wandb/
+runs/
+logs/
+lightning_logs/
+outputs/        # Hydra outputs
+multirun/       # Hydra hyperparameter sweeps
+
+# ===========================
+# IDEs & OS Files
+# ===========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Secrets & Configs (Security)
+# ===========================
+.env
+secrets.yaml
+config_local.yaml
+*.pem
+key.json
+ssh_keys/       # Just in case you accidentally copy keys here
+
+# ===========================
+# Specific to your Setup
+# ===========================
+# We WANT to commit Colab_Tools, so we do NOT ignore it.
+# But we ignore any temp files generated inside it.
+Colab_Tools/__pycache__/
