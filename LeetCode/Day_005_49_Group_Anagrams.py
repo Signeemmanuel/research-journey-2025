@@ -38,5 +38,5 @@ def groupAnagrams(strs:str) -> List[List[str]]:
     return list(anagram_group.values())
 
 
-
+#Test
 print(groupAnagrams(strs = ["eat","tea","tan","ate","nat","bat"]))
